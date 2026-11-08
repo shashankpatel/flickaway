@@ -1,0 +1,41 @@
+name: FlickAway
+options:
+  bundleIdPrefix: com.shashankpatel
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    PRODUCT_NAME: Flick Away
+    PRODUCT_BUNDLE_IDENTIFIER: com.shashankpatel.flickaway
+    MARKETING_VERSION: "0.3.6"
+    CURRENT_PROJECT_VERSION: "22"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    SWIFT_VERSION: "5.9"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    GENERATE_INFOPLIST_FILE: false
+    INFOPLIST_FILE: Info.plist
+    LD_RUNPATH_SEARCH_PATHS: "@executable_path/../Frameworks"
+    ENABLE_HARDENED_RUNTIME: false
+targets:
+  FlickAway:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/FlickAway
+    settings:
+      base:
+        PRODUCT_NAME: Flick Away
+        EXECUTABLE_NAME: FlickAway
+        PRODUCT_BUNDLE_IDENTIFIER: com.shashankpatel.flickaway
+        INFOPLIST_FILE: Info.plist
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+schemes:
+  FlickAway:
+    build:
+      targets:
+        FlickAway: all
+    run:
+      config: Debug

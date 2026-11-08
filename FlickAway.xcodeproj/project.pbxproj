@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77FDDFBAE0A5FB4BA0CC6272 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BED30E45090D837FCF03D /* HotKey.swift */; };
+		85AC6026168006B3D850774F /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CC95B91978F0776FC67F2 /* Overlay.swift */; };
+		9BC2334F0FF2A3E380038DB0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D6ACD5BD1B31529C73F3 /* main.swift */; };
+		BE48EBE58E34F1AEAD754FB1 /* ShortcutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FD3449F32E20DF88704A7 /* ShortcutSettings.swift */; };
+		D5194102259FFE033881D5A4 /* BrowserPiP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F61BD4D71E66D2B4FFA3DE /* BrowserPiP.swift */; };
+		FFB509F83792060599409244 /* AccessibilityGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C4A7A9029EC48160C654 /* AccessibilityGuide.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12F61BD4D71E66D2B4FFA3DE /* BrowserPiP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserPiP.swift; sourceTree = "<group>"; };
+		155FD3449F32E20DF88704A7 /* ShortcutSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettings.swift; sourceTree = "<group>"; };
+		200CC95B91978F0776FC67F2 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		2A59D6ACD5BD1B31529C73F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4E0722D8BE9F73BECCB6E6B1 /* FlickAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C49C4A7A9029EC48160C654 /* AccessibilityGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityGuide.swift; sourceTree = "<group>"; };
+		A72BED30E45090D837FCF03D /* HotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKey.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1AED3D85EDC686BAFD95CC8D /* FlickAway */ = {
+			isa = PBXGroup;
+			children = (
+				9C49C4A7A9029EC48160C654 /* AccessibilityGuide.swift */,
+				12F61BD4D71E66D2B4FFA3DE /* BrowserPiP.swift */,
+				A72BED30E45090D837FCF03D /* HotKey.swift */,
+				2A59D6ACD5BD1B31529C73F3 /* main.swift */,
+				200CC95B91978F0776FC67F2 /* Overlay.swift */,
+				155FD3449F32E20DF88704A7 /* ShortcutSettings.swift */,
+			);
+			path = FlickAway;
+			sourceTree = "<group>";
+		};
+		6C7B409605D4084229BC486C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E0722D8BE9F73BECCB6E6B1 /* FlickAway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9957E3C738CCDC51C8D2BE4 = {
+			isa = PBXGroup;
+			children = (
+				CBF18C68C071E449A750F01A /* Sources */,
+				6C7B409605D4084229BC486C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBF18C68C071E449A750F01A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1AED3D85EDC686BAFD95CC8D /* FlickAway */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97B4A470A8EBDD4E4808B62D /* FlickAway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29541D2A904043BBF6D8E021 /* Build configuration list for PBXNativeTarget "FlickAway" */;
+			buildPhases = (
+				31E9E6F8E8A556613D1D431E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickAway;
+			packageProductDependencies = (
+			);
+			productName = FlickAway;
+			productReference = 4E0722D8BE9F73BECCB6E6B1 /* FlickAway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D0A78B19A8912B6DA857F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					97B4A470A8EBDD4E4808B62D = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7C27CA1B7C32E636278D3E02 /* Build configuration list for PBXProject "FlickAway" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C9957E3C738CCDC51C8D2BE4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6C7B409605D4084229BC486C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B4A470A8EBDD4E4808B62D /* FlickAway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31E9E6F8E8A556613D1D431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB509F83792060599409244 /* AccessibilityGuide.swift in Sources */,
+				D5194102259FFE033881D5A4 /* BrowserPiP.swift in Sources */,
+				77FDDFBAE0A5FB4BA0CC6272 /* HotKey.swift in Sources */,
+				85AC6026168006B3D850774F /* Overlay.swift in Sources */,
+				BE48EBE58E34F1AEAD754FB1 /* ShortcutSettings.swift in Sources */,
+				9BC2334F0FF2A3E380038DB0 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1294134723660BCE1657BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_NAME = FlickAway;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.flickaway;
+				PRODUCT_NAME = "Flick Away";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2768240203DC2BCB4D622277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_NAME = FlickAway;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.flickaway;
+				PRODUCT_NAME = "Flick Away";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		90C86C8D6EF74548DE8D5107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 22;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.3.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.flickaway;
+				PRODUCT_NAME = "Flick Away";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		BF8D618B7B8D53067E6C6CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 22;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.3.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shashankpatel.flickaway;
+				PRODUCT_NAME = "Flick Away";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29541D2A904043BBF6D8E021 /* Build configuration list for PBXNativeTarget "FlickAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1294134723660BCE1657BD8F /* Debug */,
+				2768240203DC2BCB4D622277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7C27CA1B7C32E636278D3E02 /* Build configuration list for PBXProject "FlickAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C86C8D6EF74548DE8D5107 /* Debug */,
+				BF8D618B7B8D53067E6C6CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D0A78B19A8912B6DA857F5E /* Project object */;
+}

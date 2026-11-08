@@ -1,7 +1,13 @@
 .build/
 .swiftpm/
 .DS_Store
-.build/
-.swiftpm/
-.DS_Store
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+timeline.xctimeline
+playground.xcworkspace
 .superpowers/
