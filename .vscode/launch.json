@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:flickaway}",
+            "name": "Debug PiPFlick",
+            "target": "PiPFlick",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug PiPFlick"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:flickaway}",
+            "name": "Release PiPFlick",
+            "target": "PiPFlick",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release PiPFlick"
+        }
+    ]
+}
