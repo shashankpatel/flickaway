@@ -4,7 +4,7 @@ import OSLog
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let browser = PiPDiscovery()
-    private let logger = Logger(subsystem: "local.pipflick.utility", category: "Movement")
+    private let logger = Logger(subsystem: "com.shashankpatel.flickaway", category: "Movement")
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let shortcutStatus = NSMenuItem(title: "", action: nil, keyEquivalent: "")
     private let accessStatusItem = NSMenuItem(title: "Accessibility access required", action: nil, keyEquivalent: "")
@@ -33,13 +33,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem.button?.title = ""
         let icon = NSImage(systemSymbolName: "arrow.up.and.down.and.arrow.left.and.right",
-                           accessibilityDescription: "PiP Flick")
+                           accessibilityDescription: "Flick Away")
         let menuIcon = icon?.withSymbolConfiguration(.init(pointSize: 15, weight: .medium)) ?? icon
         menuIcon?.isTemplate = true
         statusItem.button?.image = menuIcon
         statusItem.button?.imagePosition = .imageOnly
-        statusItem.button?.setAccessibilityLabel("PiP Flick")
-        statusItem.button?.toolTip = "PiP Flick"
+        statusItem.button?.setAccessibilityLabel("Flick Away")
+        statusItem.button?.toolTip = "Flick Away"
 
         let menu = NSMenu()
         menu.delegate = self
@@ -76,7 +76,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(menuItem("Accessibility Settings…", #selector(openAccessibilitySettings)))
         menu.addItem(.separator())
         let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
-        menu.addItem(menuItem("About PiP Flick \(version)…", #selector(showAbout)))
+        menu.addItem(menuItem("About Flick Away \(version)…", #selector(showAbout)))
         menu.addItem(menuItem("Quit", #selector(quit)))
         statusItem.menu = menu
         _ = updateAccessibilityStatus()
@@ -125,7 +125,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         accessStatusItem.isHidden = trusted
         fixAccessItem.isHidden = trusted
         accessSeparator.isHidden = trusted
-        statusItem.button?.toolTip = trusted ? "PiP Flick" : "PiP Flick — Accessibility access required"
+        statusItem.button?.toolTip = trusted ? "Flick Away" : "Flick Away — Accessibility access required"
         accessibilityGuide?.update(trusted: trusted)
         if !trusted {
             stopManualDrag()
@@ -207,7 +207,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
         let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
         NSApp.activate(ignoringOtherApps: true)
-        NSApp.orderFrontStandardAboutPanel(options: [.applicationName: "PiP Flick",
+        NSApp.orderFrontStandardAboutPanel(options: [.applicationName: "Flick Away",
                                                     .applicationVersion: "\(version) (\(build))"])
     }
 

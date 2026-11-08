@@ -15,7 +15,7 @@ final class ShortcutSettings: NSWindowController, NSWindowDelegate {
         self.recordingChanged = recordingChanged
         let window = NSWindow(contentRect: CGRect(x: 0, y: 0, width: 440, height: 250),
                               styleMask: [.titled, .closable], backing: .buffered, defer: false)
-        window.title = "PiP Flick Settings"
+        window.title = "Flick Away Settings"
         window.isReleasedWhenClosed = false
         super.init(window: window)
         window.delegate = self

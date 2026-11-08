@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PiPFlick",
+    name: "FlickAway",
     platforms: [.macOS(.v13)],
-    targets: [.executableTarget(name: "PiPFlick")]
+    targets: [.executableTarget(name: "FlickAway")]
 )

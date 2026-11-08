@@ -40,7 +40,7 @@ struct PiPDiscovery {
 
     func findWindow(preferred: AXUIElement? = nil, at point: CGPoint? = nil) throws -> PiPWindow {
         guard AXIsProcessTrusted() else {
-            throw PiPError("Enable PiP Flick in System Settings → Privacy & Security → Accessibility.")
+            throw PiPError("Enable Flick Away in System Settings → Privacy & Security → Accessibility.")
         }
         let floating = onScreenFloatingWindows().filter { window in
             guard let point else { return true }

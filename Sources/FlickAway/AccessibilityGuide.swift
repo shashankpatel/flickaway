@@ -12,7 +12,7 @@ final class AccessibilityGuide: NSWindowController {
         self.openSettings = openSettings
         let panel = NSPanel(contentRect: CGRect(x: 0, y: 0, width: 530, height: 610),
                             styleMask: [.titled, .closable], backing: .buffered, defer: false)
-        panel.title = "Enable Accessibility for PiP Flick"
+        panel.title = "Enable Accessibility for Flick Away"
         panel.level = .floating
         panel.isFloatingPanel = true
         panel.hidesOnDeactivate = false
@@ -46,9 +46,9 @@ final class AccessibilityGuide: NSWindowController {
         settings.bezelStyle = .rounded
         content.addArrangedSubview(settings)
 
-        addStep(to: content, heading: "1. Turn on PiP Flick",
-                body: "In System Settings, open Privacy & Security → Accessibility. Turn on the switch beside PiP Flick. Authenticate if macOS asks.")
-        addStep(to: content, heading: "2. If PiP Flick is missing",
+        addStep(to: content, heading: "1. Turn on Flick Away",
+                body: "In System Settings, open Privacy & Security → Accessibility. Turn on the switch beside Flick Away. Authenticate if macOS asks.")
+        addStep(to: content, heading: "2. If Flick Away is missing",
                 body: "Click the + button and add the copy of the app you are running. Use the Finder button below to locate it.")
 
         let file = NSTextField(wrappingLabelWithString: "This copy: \(appURL.lastPathComponent)")
@@ -60,7 +60,7 @@ final class AccessibilityGuide: NSWindowController {
         content.addArrangedSubview(finder)
 
         addStep(to: content, heading: "3. If access is still blocked after an update",
-                body: "Select the old PiP Flick entry and click − to remove it. Click + and add this copy again. If this window still says access is required, quit PiP Flick and reopen this same copy.")
+                body: "Select the old Flick Away entry and click − to remove it. Click + and add this copy again. If this window still says access is required, quit Flick Away and reopen this same copy.")
 
         let note = NSTextField(wrappingLabelWithString:
             "This window stays on top while you follow the steps. The status above updates automatically.")
@@ -107,8 +107,8 @@ final class AccessibilityGuide: NSWindowController {
         status.stringValue = trusted ? "Accessibility is enabled" : "Accessibility access is required"
         status.textColor = trusted ? .systemGreen : .systemOrange
         explanation.stringValue = trusted
-            ? "PiP Flick can now move your video window. You can close these instructions."
-            : "PiP Flick needs permission to detect and move video windows. Follow these steps to enable it."
+            ? "Flick Away can now move your video window. You can close these instructions."
+            : "Flick Away needs permission to detect and move video windows. Follow these steps to enable it."
     }
 
     func present(trusted: Bool) {
