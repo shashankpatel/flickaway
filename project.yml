@@ -1,5 +1,6 @@
 name: FlickAway
 options:
+  projectFormat: xcode15_0
   bundleIdPrefix: com.shashankpatel
   deploymentTarget:
     macOS: "13.0"

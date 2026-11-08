@@ -5,20 +5,20 @@
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:flickaway}",
-            "name": "Debug PiPFlick",
-            "target": "PiPFlick",
+            "name": "Debug FlickAway",
+            "target": "FlickAway",
             "configuration": "debug",
-            "preLaunchTask": "swift: Build Debug PiPFlick"
+            "preLaunchTask": "swift: Build Debug FlickAway"
         },
         {
             "type": "swift",
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:flickaway}",
-            "name": "Release PiPFlick",
-            "target": "PiPFlick",
+            "name": "Release FlickAway",
+            "target": "FlickAway",
             "configuration": "release",
-            "preLaunchTask": "swift: Build Release PiPFlick"
+            "preLaunchTask": "swift: Build Release FlickAway"
         }
     ]
 }

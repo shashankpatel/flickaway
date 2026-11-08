@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -98,6 +98,7 @@
 				};
 			};
 			buildConfigurationList = 7C27CA1B7C32E636278D3E02 /* Build configuration list for PBXProject "FlickAway" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,7 +107,6 @@
 			);
 			mainGroup = C9957E3C738CCDC51C8D2BE4;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 6C7B409605D4084229BC486C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
